@@ -4,6 +4,17 @@ document.querySelectorAll(".nav-links a, .contact-links a").forEach((link) => {
   }
 });
 
+if (document.body.classList.contains("home-page") && !window.location.hash) {
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  window.scrollTo(0, 0);
+  window.addEventListener("pageshow", () => {
+    window.scrollTo(0, 0);
+  });
+}
+
 const desktopJoinWords = new Set([
   "a",
   "an",
