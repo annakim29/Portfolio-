@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sky Alert case study by Anna Yakymchuk."
+    />
+    <title>Sky Alert | Anna Yakymchuk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&family=Space+Grotesk:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260729-242" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="https://www.linkedin.com/in/anna-yakymchuk-13767b243/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:des.yakymchuk@gmail.com">Email</a>
+        <a href="https://t.me/annakim_29" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </nav>
+      <div class="header-meta">
+        <span>Based in Ukraine</span>
+        <span>Remote-first</span>
+        <a class="cv-button" href="#" aria-label="Download CV">CV</a>
+      </div>
+    </header>
+
+    <main class="case-page sky-page" id="top">
+      <section class="case-hero" aria-labelledby="case-title">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html#work">Work</a>
+          <span>/</span>
+          <span>Sky Alert</span>
+        </nav>
+
+        <div class="case-hero-grid">
+          <div class="case-title-block">
+            <div class="case-kicker">
+              <span>Case Study</span>
+              <i></i>
+              <span>2025</span>
+            </div>
+            <h1 id="case-title">Sky Alert</h1>
+            <p>
+              A mobile app that helps people quickly understand an air raid
+              alert and reach <span class="keep-together-desktop">the nearest</span> shelter.
+            </p>
+
+            <dl class="case-meta">
+              <div>
+                <dt>Role</dt>
+                <dd>Product Designer</dd>
+              </div>
+              <div>
+                <dt>Scope</dt>
+                <dd>Research, UX, UI Design</dd>
+              </div>
+              <div>
+                <dt>Platform</dt>
+                <dd>Mobile App</dd>
+              </div>
+              <div>
+                <dt>Industry</dt>
+                <dd>Safety Tech</dd>
+              </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>1 month</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="case-quote">
+            <blockquote>
+              The problem wasn't the alert. <span class="keep-together-desktop">It was</span> the time it took to
+              understand what <span class="keep-together-mobile">it meant.</span>
+            </blockquote>
+            <span>Core Insight</span>
+          </aside>
+        </div>
+
+        <figure class="case-hero-image">
+          <picture>
+            <source
+              media="(max-width: 720px)"
+              srcset="assets/sky-alert-hero-mobile.jpg"
+            />
+            <img src="assets/sky-alert-hero-v3.jpg" alt="Sky Alert mobile app screens" />
+          </picture>
+        </figure>
+      </section>
+
+      <section class="case-section case-two-col" aria-labelledby="scenario-title">
+        <div class="case-section-heading">
+          <div class="case-label">
+            <span>01</span>
+            <i></i>
+          </div>
+          <h2 id="scenario-title">3:17 AM</h2>
+          <p>
+            The siren goes off. Notification appears. It tells you almost
+            nothing about what's actually happening.
+          </p>
+          <p>
+            Is it a drone or a missile? Is the threat nearby? Do you need to get
+            to a shelter now or can you wait?
+          </p>
+          <p>
+            To answer those questions, people leave the alert and start checking
+            other sources. Telegram. Maps. Local channels. It takes another
+            three to five minutes before they know whether to act or wait.
+          </p>
+        </div>
+
+        <div class="response-card">
+          <span>The Sequence of a Typical Response</span>
+          <ol class="response-steps" aria-label="Typical response sequence">
+            <li class="is-alert">
+              <b>!</b>
+              <strong>Siren</strong>
+              <p>Sound triggers alert</p>
+            </li>
+            <li>
+              <b>2</b>
+              <strong>Push Alert</strong>
+              <p>Notification arrives</p>
+            </li>
+            <li>
+              <b>3</b>
+              <strong>What type?</strong>
+              <p>Missile? Drone?</p>
+            </li>
+            <li>
+              <b>4</b>
+              <strong>How far?</strong>
+              <p>Direction unclear</p>
+            </li>
+            <li>
+              <b>5</b>
+              <strong>Switch apps</strong>
+              <p>Multiple sources</p>
+            </li>
+            <li class="is-action">
+              <b>✓</b>
+              <strong>Decision</strong>
+              <p>Act or wait?</p>
+            </li>
+          </ol>
+          <div class="response-progress" aria-hidden="true">
+            <i></i>
+          </div>
+          <div class="response-caption">
+            <span>Alert</span>
+            <span>← avg. 3-5 min of uncertainty →</span>
+            <span>Action</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow-section" aria-labelledby="problem-title">
+        <div class="flow-header">
+          <div class="case-label flow-number">
+            <span>02</span>
+            <i></i>
+          </div>
+          <h2 id="problem-title">A Simple Flow</h2>
+          <p>
+            During every alert, people follow the same sequence: understand
+            what is happening, decide whether it affects them, then act if
+            necessary.
+          </p>
+        </div>
+        <div class="core-flow-panel">
+          <span class="panel-label">Core Flow</span>
+          <div class="flow-cards" aria-label="Core flow steps">
+            <article class="flow-card is-trigger">
+              <div>
+                <span>01</span>
+                <h3>Alert</h3>
+              </div>
+              <div>
+                <strong>The official alert becomes the entry point</strong>
+                <p>Region and time from official sources.</p>
+              </div>
+            </article>
+            <i aria-hidden="true">›</i>
+            <article class="flow-card">
+              <div>
+                <span>02</span>
+                <h3>Context</h3>
+              </div>
+              <div>
+                <strong>Assess the threat</strong>
+                <p>Threat type, direction<br class="desktop-only-break" />and estimated area.</p>
+              </div>
+            </article>
+            <i aria-hidden="true">›</i>
+            <article class="flow-card">
+              <div>
+                <span>03</span>
+                <h3>Shelter</h3>
+              </div>
+              <div>
+                <strong>Find the nearest available shelter</strong>
+                <p>Distance and map.</p>
+              </div>
+            </article>
+            <i aria-hidden="true">›</i>
+            <article class="flow-card">
+              <div>
+                <span>04</span>
+                <h3>Route</h3>
+              </div>
+              <div>
+                <strong>Get there with one tap</strong>
+                <p>Estimated time and directions.</p>
+              </div>
+            </article>
+          </div>
+          <div class="flow-legend">
+            <div>
+              <span class="legend-dot red"></span>
+              <strong>Trigger</strong>
+              <i></i>
+              <span class="legend-dot blue"></span>
+              <strong>Action</strong>
+            </div>
+            <p>Alert -> Context -> Shelter -> Route.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-section" aria-labelledby="research-title">
+        <div class="research-header">
+          <div class="case-label research-number">
+            <span>03</span>
+            <i></i>
+          </div>
+          <div class="research-title-block">
+            <h2 id="research-title">Research</h2>
+            <dl class="research-stats">
+              <div>
+                <dt>4</dt>
+                <dd>Methods</dd>
+              </div>
+              <div>
+                <dt>3</dt>
+                <dd>Weeks of Observation</dd>
+              </div>
+              <div>
+                <dt>12+</dt>
+                <dd>Sources Analyzed</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="research-copy">
+            <p>
+              Research combined competitor analysis, user observation, informal
+              interviews and firsthand experience using alert apps during air
+              raids.
+            </p>
+            <p>
+              Together, these methods revealed what people actually do after an
+              alert, not just what existing apps were designed to support.
+            </p>
+          </div>
+        </div>
+
+        <div class="research-panel">
+          <span>Key Observations</span>
+          <div class="observation-grid">
+            <article>
+              <span>01</span>
+              <h3>What happens after the alert?</h3>
+              <p>The notification was rarely the end of <span class="keep-together-desktop">the journey.</span> It was the starting point.</p>
+              <p>People immediately turned to other sources to understand whether the threat affected them.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>How do people decide what to do?</h3>
+              <p>No single source answered the whole question.</p>
+              <p>Telegram explained the threat. Maps showed nearby shelters. Local chats confirmed whether they were actually open. People had to piece the answer together themselves.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>What slows people down?</h3>
+              <p>Finding shelter almost always meant switching between multiple sources. Practical details like accessibility, conditions, or availability were often missing.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="decision-shift-section" aria-labelledby="decision-shift-title">
+        <div class="case-label">
+          <span>04</span>
+          <i></i>
+        </div>
+        <div class="decision-shift-grid">
+          <div class="decision-shift-copy">
+            <h2 id="decision-shift-title">From alerts<br />to decisions</h2>
+            <p>
+              The product wasn't designed to explain the alert. It was designed
+              to support the next decision.
+            </p>
+          </div>
+          <div class="before-after-flow">
+            <article>
+              <span>Before</span>
+              <h3>Identify the threat</h3>
+              <p>Focus on the threat</p>
+            </article>
+            <i aria-hidden="true">→</i>
+            <article>
+              <span>After</span>
+              <h3>Support the response</h3>
+              <p>Focus on the next action</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="urgency-section" aria-labelledby="urgency-title">
+        <div class="case-label urgency-label">
+          <span>05</span>
+          <i></i>
+        </div>
+
+        <div class="urgency-top">
+          <div class="urgency-copy">
+            <h2 id="urgency-title">Designing<br />for urgency</h2>
+            <p>
+              During an alert, attention is limited. The interface was designed
+              around one question: what needs to be visible first?
+            </p>
+          </div>
+
+          <div class="priority-stack" aria-label="Information priority levels">
+            <article class="priority-card is-critical">
+              <header>
+                <strong>Critical</strong>
+                <p>Always visible. Drives immediate action.</p>
+                <span></span>
+              </header>
+              <div class="priority-items">
+                <div>
+                  <h3>Threat Type</h3>
+                  <p>Missile, drone, aircraft</p>
+                </div>
+                <div>
+                  <h3>Threat Direction</h3>
+                  <p>To which region</p>
+                </div>
+                <div>
+                  <h3>Shelter Access</h3>
+                  <p>Nearest open shelter</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="priority-card">
+              <header>
+                <strong>Important</strong>
+                <p>Available one tap away. Supports verification.</p>
+                <span></span>
+              </header>
+              <div class="priority-items compact">
+                <div>
+                  <h3>Threat Map</h3>
+                  <p>Visual spread overview</p>
+                </div>
+                <div>
+                  <h3>Trusted Sources</h3>
+                  <p>Air Force, regional channels</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="priority-card">
+              <header>
+                <strong>Secondary</strong>
+                <p>Accessible but deprioritized. Not time-critical.</p>
+                <span></span>
+              </header>
+              <div class="priority-items compact">
+                <div>
+                  <h3>Community</h3>
+                  <p>Peer support</p>
+                </div>
+                <div>
+                  <h3>Mini-game</h3>
+                  <p>Stress relief</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="urgency-principle">
+          <span>Core Principle</span>
+          <h3>Alert → Context → Action</h3>
+          <div class="urgency-steps">
+            <article>
+              <span>◎</span>
+              <small>01</small>
+              <h4>Push Alert</h4>
+              <p>Signals that attention is needed. <span class="keep-together-mobile">Entry point</span> into <span class="keep-together-desktop">the experience.</span></p>
+            </article>
+            <i aria-hidden="true">›</i>
+            <article>
+              <span>⚡</span>
+              <small>02</small>
+              <h4>Threat Context</h4>
+              <p>Reduce uncertainty before action. Official context before making <span class="keep-together-mobile">a decision.</span></p>
+            </article>
+            <i aria-hidden="true">›</i>
+            <article>
+              <span>⊕</span>
+              <small>03</small>
+              <h4>Shelter Access</h4>
+              <p>Show the nearest available shelter.</p>
+            </article>
+            <i aria-hidden="true">›</i>
+            <article>
+              <span>→</span>
+              <small>04</small>
+              <h4>Route</h4>
+              <p>Remove friction when every second matters. The fastest path to safety.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-showcase" aria-labelledby="experience-title">
+        <div class="case-label">
+          <span>06</span>
+          <i></i>
+        </div>
+        <h2 id="experience-title">The Product Experience</h2>
+        <div class="primary-flow-divider"></div>
+        <span class="primary-flow-title">Primary Flow</span>
+
+        <div class="product-experience-scene">
+          <article class="flow-note alert-note">
+            <p>
+              <strong>Alert State.</strong>
+              Answers the first question immediately: is something happening
+              right now?
+            </p>
+          </article>
+          <article class="flow-note context-note">
+            <p>
+              <strong>Threat Context.</strong>
+              Explains what is happening and whether it affects the user.
+            </p>
+          </article>
+          <article class="flow-note shelter-note">
+            <p>
+              <strong>Shelter Access.</strong>
+              Removes the extra step between recognizing the threat and finding
+              shelter.
+            </p>
+          </article>
+
+          <figure class="phone-stage phone-alert">
+            <img src="assets/sky-alert-notification.jpg" alt="Sky Alert lock screen notification" />
+          </figure>
+          <figure class="phone-stage phone-context">
+            <img src="assets/sky-alert-phone-b.jpg" alt="Sky Alert threat context screen" />
+          </figure>
+          <figure class="phone-stage phone-shelter">
+            <img src="assets/sky-alert-phone-a.jpg" alt="Sky Alert nearest shelter map screen" />
+          </figure>
+        </div>
+
+        <div class="supporting-tools-block">
+          <span class="primary-flow-title">Supporting Tools</span>
+          <p class="supporting-tools-copy">
+            Supporting tools add context without interrupting the core flow. The
+            threat map shows how the situation is evolving. Trusted sources allow
+            people to verify information without leaving the app. Alert history helps
+            identify patterns beyond a single event.
+          </p>
+          <div
+            class="supporting-tools-phones supporting-tools-carousel mobile-screen-carousel"
+            aria-label="Supporting tools screens"
+            tabindex="0"
+          >
+            <figure class="phone-stage support-phone support-phone-map">
+              <img src="assets/sky-alert-support-map-noshadow.png" alt="Sky Alert Ukraine alert map screen" />
+            </figure>
+            <figure class="phone-stage support-phone support-phone-sources">
+              <img src="assets/sky-alert-support-sources-noshadow.png" alt="Sky Alert trusted sources screen" />
+            </figure>
+            <figure class="phone-stage support-phone support-phone-history">
+              <img src="assets/sky-alert-support-history-noshadow.png" alt="Sky Alert alert history screen" />
+            </figure>
+          </div>
+          <div
+            class="supporting-tools-dots mobile-carousel-dots"
+            aria-label="Choose supporting tools screen"
+          >
+            <button class="is-active" type="button" aria-label="Show supporting tool screen 1" aria-current="true"></button>
+            <button type="button" aria-label="Show supporting tool screen 2"></button>
+            <button type="button" aria-label="Show supporting tool screen 3"></button>
+          </div>
+        </div>
+
+        <div class="personalization-block">
+          <span class="primary-flow-title">Personalization</span>
+          <p class="supporting-tools-copy">
+            People follow different regions and live different routines. Region
+            selection keeps multiple important locations visible at once, while
+            notification settings adapt alerts to everyday life without changing the
+            core experience.
+          </p>
+          <div
+            class="personalization-phones personalization-carousel mobile-screen-carousel"
+            aria-label="Personalization screens"
+            tabindex="0"
+          >
+            <figure class="phone-stage personalization-phone personalization-phone-region">
+              <img src="assets/sky-alert-personalization-region-noshadow.png" alt="Sky Alert region selection screen" />
+            </figure>
+            <figure class="phone-stage personalization-phone personalization-phone-settings">
+              <img src="assets/sky-alert-personalization-settings-noshadow.png" alt="Sky Alert notification settings screen" />
+            </figure>
+          </div>
+          <div
+            class="personalization-dots mobile-carousel-dots"
+            aria-label="Choose personalization screen"
+          >
+            <button class="is-active" type="button" aria-label="Show personalization screen 1" aria-current="true"></button>
+            <button type="button" aria-label="Show personalization screen 2"></button>
+          </div>
+        </div>
+
+        <div class="beyond-core-block">
+          <span class="primary-flow-title">Beyond the Core Flow</span>
+          <div class="beyond-community-row">
+            <div class="community-carousel mobile-screen-carousel" aria-label="Community screens" tabindex="0">
+              <figure class="phone-stage beyond-phone beyond-phone-community">
+                <img src="assets/sky-alert-beyond-community-noshadow.png" alt="Sky Alert community list screen" />
+              </figure>
+              <figure class="phone-stage beyond-phone beyond-phone-chat">
+                <img src="assets/sky-alert-beyond-chat-noshadow.png" alt="Sky Alert community chat screen" />
+              </figure>
+            </div>
+            <p class="beyond-copy community-copy">
+              <strong>Community.</strong> Gives people a way to share local context
+              that official sources often can't provide.
+            </p>
+            <div class="community-dots mobile-carousel-dots" aria-label="Choose community screen">
+              <button class="is-active" type="button" aria-label="Show community screen 1" aria-current="true"></button>
+              <button type="button" aria-label="Show community screen 2"></button>
+            </div>
+          </div>
+          <div class="mini-game-row">
+            <p class="beyond-copy mini-game-copy">
+              <strong>Mini-Game.</strong> Offers a distraction while waiting. Every
+              coin earned can be turned into a donation.
+            </p>
+            <div class="mini-game-carousel mobile-screen-carousel" aria-label="Mini-game concept screens" tabindex="0">
+              <figure class="mini-sketch mini-sketch-game">
+                <img src="assets/sky-alert-mini-game.png" alt="Sky Alert mini-game sketch" />
+              </figure>
+              <figure class="mini-sketch mini-sketch-donate">
+                <img src="assets/sky-alert-mini-donate.png" alt="Sky Alert donation sketch" />
+              </figure>
+              <figure class="mini-sketch mini-sketch-thanks">
+                <img src="assets/sky-alert-mini-thanks.png" alt="Sky Alert thank you sketch" />
+              </figure>
+            </div>
+            <div class="mini-game-dots mobile-carousel-dots" aria-label="Choose mini-game screen">
+              <button class="is-active" type="button" aria-label="Show screen 1" aria-current="true"></button>
+              <button type="button" aria-label="Show screen 2"></button>
+              <button type="button" aria-label="Show screen 3"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section intent-section" aria-labelledby="solution-title">
+        <div class="case-section-heading intent-heading">
+          <div class="case-label">
+            <span>07</span>
+            <i></i>
+          </div>
+          <h2 id="solution-title">What the product intentionally doesn't do.</h2>
+          <p>
+            Not every problem is solved by a new feature.
+            <br class="mobile-only-break" />The product stays
+            focused on a single job: helping people understand the situation
+            and decide what <br class="mobile-only-break" />to do next.
+          </p>
+        </div>
+        <div class="intent-table">
+          <article>
+            <h3>Does not generate alerts</h3>
+            <p>It adds context to alerts that already exist.</p>
+          </article>
+          <article>
+            <h3>Does not make decisions</h3>
+            <p>It provides information. The final decision is up <br class="mobile-only-break" /><span class="keep-together-desktop">to the</span> person.</p>
+          </article>
+          <article>
+            <h3>Does not amplify fear</h3>
+            <p>The interface stays calm because the situation <br class="mobile-only-break" />is already stressful enough.</p>
+          </article>
+          <article>
+            <h3>Does not replace official sources</h3>
+            <p>
+              It complements official sources by gathering essential information
+              in one place.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-reflection" aria-labelledby="reflection-title">
+        <div class="case-label">
+          <span>08</span>
+          <i></i>
+        </div>
+        <div class="reflection-grid">
+          <div>
+            <h2 id="reflection-title">
+              The hardest decision<br class="mobile-only-break" /> in this project wasn't what to add. It was
+              what to remove.
+            </h2>
+            <p>
+              At first, showing more felt like the obvious answer:
+              <br class="mobile-only-break" />a complete
+              threat map, alert history and details from every available
+              source. But every new layer<br class="mobile-only-break" /> of information required more time to
+              read before people could decide.
+            </p>
+            <p>
+              Eventually, I realized the product didn't need to explain
+              everything. It needed to answer one question as quickly as
+              possible: should I act now or can I wait? Everything else exists
+              to support that decision,
+              <span class="keep-together-desktop">not compete</span> for
+              attention.
+            </p>
+          </div>
+          <div class="reflection-notes">
+            <article>
+              <span>Primary Insight</span>
+              <strong>The first answer matters more than every answer.</strong>
+            </article>
+            <article>
+              <span>Core Decision</span>
+              <strong>Support the decision. Never make it.</strong>
+            </article>
+            <article>
+              <span>Design Principle</span>
+              <strong>Clarity before completeness.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-project next-project-linkable">
+        <a
+          class="next-project-hit-area"
+          href="idea-school.html"
+          aria-label="View Idea School case study"
+        ></a>
+        <div>
+          <span>Next Project</span>
+          <h2>Idea School</h2>
+          <p>
+            Website redesign for a private school that helps parents figure out
+            if it's the right fit for their child.
+          </p>
+          <span class="text-link">View Case Study <span>→</span></span>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 720px)"
+            srcset="assets/idea-school-next-project-mobile.jpg"
+          />
+          <img src="assets/idea-school.jpg" alt="Idea School case study preview" />
+        </picture>
+      </section>
+
+      <footer class="case-footer">
+        <span>Anna Yakymchuk · Product Designer · 2026</span>
+        <a class="back-to-top" href="#top"><span>↑</span> Back to top</a>
+        <a href="index.html#work">← Back to all projects</a>
+      </footer>
+    </main>
+    <script src="script.js?v=20260729-22"></script>
+  </body>
+</html>
