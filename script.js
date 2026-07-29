@@ -241,11 +241,9 @@ window.addEventListener("resize", () => {
   emailPopover.hidden = true;
 });
 
-const mobileProjectLayout = window.matchMedia("(max-width: 720px)");
-
 document.querySelectorAll(".work .project-row-linkable").forEach((project) => {
   project.addEventListener("click", (event) => {
-    if (!mobileProjectLayout.matches || event.target.closest("a, button")) return;
+    if (event.target.closest("a, button")) return;
 
     const projectLink = project.querySelector(".project-media");
     if (projectLink) window.location.href = projectLink.href;
